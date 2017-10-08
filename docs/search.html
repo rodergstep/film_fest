@@ -117,70 +117,170 @@
     </header>
 <!-- MAIN -->
 <main class="main">
-  <div class=" event movie">
-    <section class="slider">
-      <div class="slider__item">
-        <p class="slider__item-title">Наслов на настанот наслов наслов</p>
-        <p class="slider__item-time">October 20, 2017</p>
+  <section class="search">
+    <div class="container">
+      <div class="content__festname">
+        <img src="img/program/title.svg" alt="Investigate film festival in Skopje">
       </div>
-      <div class="slider__item">
-        <p class="slider__item-title">Наслов на настанот наслов наслов</p>
-        <p class="slider__item-time">October 20, 2017</p>
+      <div class="row">
+        <h1 class="content-title">филмови 2017</h1>
       </div>
-      <div class="slider__item">
-        <p class="slider__item-title">Наслов на настанот наслов наслов</p>
-        <p class="slider__item-time">October 20, 2017</p>
-      </div>
-    </section>
-    <section class="movie__cont">
-      <div class="container">
-        <div class="cont-inner">
-          <article class="desc col-md-8 col-lg-7 ml-lg-auto">
-            <h2 class="desc__title"> <span>16:00 - 16:30</span> | Kino Kultura</h2>
-            <h5 class="desc__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h5>
-            <p class="desc__text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-              nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <br> Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
-              euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-            <div class="desc__video">
-              <div data-type="youtube" data-video-id="bTqVqk7FSmY"></div>
-            </div>
-          </article>
-          <!-- sidear -->
-          <aside class="sidebar col-md-3 mr-lg-auto ">
-            <div>
-              <h4 class="sidebar__title">Учество</h4>
-              <div class="avatars-wrap">
-                <figure class="avatar">
-                  <img src="img/hero-links/event-member.png" alt="avatar name" class="gueat__ava">
-                  <figcaption class="avatar__name">
-                    <span>Barbie</span>
-                    <span>Zelizer</span>
-                  </figcaption>
-                </figure>
-                <figure class="avatar">
-                  <img src="img/hero-links/event-member.png" alt="avatar name" class="gueat__ava">
-                  <figcaption class="avatar__name">
-                    <span>Barbie</span>
-                    <span>Zelizer</span>
-                  </figcaption>
-                </figure>
+
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <select class="search__select search__field">
+                    <option selected>Festival Days</option>
+                    <option value="1">All</option>
+                    <option value="2">4 November</option>
+                    <option value="3">5 November</option>
+                    <option value="3">6 November</option>
+              </select>
+              </div>
+              <div class="col">
+                <div class="search__input-wrap">
+                  <button type="submit" class="search__input-btn search__input-btn--submit">
+                      <span class="icon-search"></span>
+                  </button>
+                  <input type="text" class="search__input search__field" placeholder="Search...">
+                  <button type="submit" class="search__input-btn search__input-btn--clear">
+                    <span class="icon-remove"></span>
+                </button>
+                </div>
               </div>
             </div>
-
-            <div class="social-iconset--sidebar">
-              <a href="#" class="social-icon">
-                <span class="icon icon-facebook-f"></span>
-              </a>
-              <a href="#" class="social-icon">
-                <span class="icon icon-twitter"></span>
-              </a>
-              <span class="sidebar__share">Share...</span>
-            </div>
-          </aside>
+          </form>
         </div>
       </div>
-    </section>
-  </div>
+      <div class="row">
+        <div class="search__results">
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+          <!-- search__item -->
+          <figure class="search__item">
+            <div class="search__image">
+              <img src="img/film-search.jpg" alt="Search result">
+              <p class="search__item-desc"><span>Краток осврт за филмот/настанот Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></p>
+            </div>
+            <figcaption class="search__item-caption">
+              <div class="search__item-left">
+                <span class="search__item-name">Име на филм/настан</span>
+                <span class="search__item-prize">Име Презиме | 70 мин.</span>
+              </div>
+              <p class="search__item-right"> <span></span> научна фантастика
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <!-- back to top button -->
 <a href="#" id="backTop" title="Back to top">
