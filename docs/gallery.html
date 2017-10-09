@@ -25,8 +25,13 @@
 	<![endif]-->
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!-- slick slider -->
   <link href="css/slick.min.css" rel="stylesheet">
+  <!-- plyr html5 player -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/2.0.16/plyr.css">
+  <!-- main styles -->
   <link href="css/main.min.css" rel="stylesheet">
   <!-- Intellectual web font loader -->
   <script src="js/vendors/fontfaceobserver.min.js"></script>
@@ -87,17 +92,16 @@
                   <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="attend.html">Attend</a>
+                  <a class="nav-link" href="speakers.html">Attend</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
                 </li>
               </ul>
-              <form class="header__search">
-                <input class="header__search-input" type="text" placeholder="Search">
-                <button class="btn navbar__search-btn" type="submit">
-                  <span class="icon-search"></span></button>
-              </form>
+              <div class="header__search">
+                <a href="search.html" class="navbar__search-btn">
+                  <span class="icon-search"></span></a>
+              </div>
               <div class="header__lang">
                 <div class="header__lang-link header__lang-mk">
                   <a href="#" class="header__lang--mk active">mk</a>
@@ -113,13 +117,105 @@
     </header>
 <!-- MAIN -->
 <main class="main">
-  <section class="hero">
+  <section class="gallery">
     <div class="container">
-      
+      <div class="row">
+        <div class="gallery__title col-md-8 ml-md-auto">
+          <h1 class="content-title">Gallery</h1>
+        </div>
+      </div>
+      <div class="row">
+        <aside class="gallery__history col-md-4">
+          <h5 class="gallery__history-title">THROUGHT the years...</h5>
+          <ul class="gallery__years-list">
+            <li>
+              <a href="#" class="gallery__year-link">
+                <span class="yellow-circle">
+                  <span class="icon icon-camera"></span>
+                </span>
+                <span class="gallery__year">2017</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="gallery__year-link">
+                <span class="yellow-circle">
+                      <span class="icon icon-camera"></span>
+                </span>
+                <span class="gallery__year">2017</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <div class="gallery__cards-wrap col-md-8">
+          <div class="gallery__cards">
+            <div class="gallery__cards-row">
+              <div class="card-column">
+                <a href="#">
+                  <img src="img/gallery/tile-1.jpg" alt="Gallery image">
+                </a>
+              </div>
+              <div class="card-column">
+                <a href="#">
+                  <img src="img/gallery/tile-2-1.jpg" alt="Gallery image">
+                </a>
+                <a href="#">
+                  <img src="img/gallery/tile-2-2.jpg" alt="Gallery image">
+                </a>
+              </div>
+              <div class="card-column">
+                <a href="#">
+                  <img src="img/gallery/tile-3-1.jpg" alt="Gallery image">
+                </a>
+                <a href="#">
+                  <img src="img/gallery/tile-3-2.jpg" alt="Gallery image">
+                </a>
+              </div>
+
+              <div class="card-column">
+                <a href="#">
+                  <img src="img/gallery/tile-4-1.jpg" alt="Gallery image">
+                </a>
+                <a href="#">
+                  <img src="img/gallery/tile-4-2.jpg" alt="Gallery image">
+                </a>
+              </div>
+              <div class="card-column">
+                <a href="#">
+                  <img src="img/gallery/tile-5-1.jpg" alt="Gallery image">
+                </a>
+                <a href="#">
+                  <img src="img/gallery/tile-5-2.jpg" alt="Gallery image">
+                </a>
+              </div>
+              <div class="card-column">
+                <a href="#">
+                  <img src="img/gallery/tile-6.jpg" alt="Gallery image">
+                </a>
+              </div>
+            </div>
+            <div class="social-iconset--big">
+              <a href="#" class="social-icon">
+                <span class="icon icon-facebook-f"></span>
+              </a>
+              <a href="#" class="social-icon">
+                <span class="icon icon-twitter"></span>
+              </a>
+              <span class="sidebar__share">Share...</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- back to top button -->
+<a href="#" id="backTop" title="Back to top">
+  <span class="icon icon-chevron-thin-up"></span>
+</a>
 </main>
+
 <footer class="footer">
+
   <div class="container">
     <div class="row">
       <div class="footer__signup col-12 col-lg-5">
@@ -191,10 +287,18 @@
 
 <!-- Loading JS files -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="js/vendors/jquery-1.12.0.min.js"></script>
+<!-- bootstrap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- slick slider -->
 <script src="js/vendors/slick.min.js"></script>
+<!-- plyr html5 player -->
+<script src="https://cdn.plyr.io/2.0.16/plyr.js"></script>
+<script>
+  plyr.setup();
+</script>
+<!-- main scripts -->
 <script src="js/main.min.js"></script>
 
 </body>
