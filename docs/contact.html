@@ -92,7 +92,7 @@
                   <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="attend.html">Attend</a>
+                  <a class="nav-link" href="speakers.html">Attend</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
@@ -119,19 +119,32 @@
 <main class="main">
   <section class="contact">
     <div class="container">
-      <div class="row contact__tiles">
-        <div class="contact__tile col-md-6 col-sm-12">
-          <figure class="contact__tile--fb">
-            <figcaption class="contact__tile-caption">Facebook</figcaption>
-            <a href="#"><img src="img/hero-bg.jpg" alt="Facebook link"></a>
-          </figure>
+      <section class="slider">
+        <div class="slider-item"><img src="img/slider__kino-kultura.jpg" alt="Kinokultura picture"></div>
+        <div class="slider-item"><img src="img/slider__kino-kultura.jpg" alt="Kinokultura picture"></div>
+        <div class="slider-item"><img src="img/slider__kino-kultura.jpg" alt="Kinokultura picture"></div>
+      </section>
+      <div class="kinokult row justify-content-center">
+        <div class="col-sm-4">
+          <div class="kinokult__poster"><img src="img/kino-kultura-poster.jpg" alt="Kino kultura poster"></div>
         </div>
-        <div class="contact__tile col-md-6 col-sm-12">
-          <figure class="contact__tile--tw">
-            <figcaption class="contact__tile-caption">Twitter</figcaption>
-            <a href="#"><img src="img/hero-bg.jpg" alt="Twitter link"></a>
-          </figure>
+        <div class="col-sm-6">
+          <div class="kinokult__desc">
+            <h2 class="content-title dark-yellow-title">Kino kultura</h2>
+            <h4 class="kinokult__subtitle">space for contemporary performing arts and culture</h4>
+            <p class="kinokult__paragraph">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+              nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <p class="kinokult__paragraph">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+            </p>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="">
+      <!--Map-->
+      <div class="map">
+        <div id="map"></div>
       </div>
     </div>
   </section>
@@ -232,3 +245,40 @@
 </body>
 
 </html>
+
+  <!-- Google Map JS -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+
+  <script>
+    function initMap() {
+      'use strict';
+
+      var myLatlng = new google.maps.LatLng(41.9973, 21.4280);
+      var mapOptions = {
+        zoom: 15,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+      var contentString = '<div id="content"><strong>Investigate film festival Skopje</strong> - KinoKultura</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'Hello'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+    /* -----------------------------------------
+        Google Map Init
+        ----------------------------------------- */
+    initMap();
+  </script>
