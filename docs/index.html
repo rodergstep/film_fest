@@ -36,9 +36,17 @@
   <!-- Intellectual web font loader -->
   <script src="js/vendors/fontfaceobserver.min.js"></script>
   <script>
-    var output = new FontFaceObserver('Open Sans');
-    output.load().then(function() {
+    var openSans = new FontFaceObserver('Open Sans');
+    openSans.load().then(function() {
       console.log('Open Sans font has loaded');
+    });
+    var kelly = new FontFaceObserver('Kelly Slab');
+    kelly.load().then(function() {
+      console.log('Kelly Slab font has loaded');
+    });
+    var icomoon = new FontFaceObserver('icomoon');
+    icomoon.load().then(function() {
+      console.log('Icomoon font has loaded');
     });
   </script>
 
